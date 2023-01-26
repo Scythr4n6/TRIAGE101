@@ -28,7 +28,7 @@ To use the script, the following must be present on the root of the USB device:
 
 - Open PowerShell as an Administrator.
 - Navigate to the USB device.
-- Execute the script by running "./TRIAGE_USB_(MRC).ps1" or "./TRAIGE_USB_(DumpIt).ps1".
+- Execute the script by running "./TRIAGE_USB_(MRC).ps1" or "./TRIAGE_USB_(DumpIt).ps1".
 - Follow the prompts to specify the location of the external storage device and the collections folder.
 - The script will automatically capture a memory image with Magnet RAM Capture, capture a triage image with KAPE, check for encrypted disks, and recover the active BitLocker Recovery key, all directly to the USB device.
 
