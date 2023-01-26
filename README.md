@@ -19,7 +19,7 @@ Collections folder, including:
 # Prerequisites:
 
 To use the script, the following must be present on the root of the USB device:
-- The script, named "TRIAGE_USB_(MRC).ps1/TRAIGE_USB_(DumpIt).ps1"
+- The script, named "TRIAGE_USB_(MRC).ps1/TRIAGE_USB_(DumpIt).ps1"
 - A folder (empty to start) titled "Collections"
 - A subdirectory within "Collections" folder named "KAPE" containing a copy of the KAPE installation, including EDDv310.exe (or the version of EDD mentioned in MagnetForensics_EDD.mkape) in the \modules\bin\EDD directory.
 - A subdirectory within "Collections" folder named "MEMORY" containing MRC.exe/DumpIt.exe (Not Magnet DumpIt).
