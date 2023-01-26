@@ -32,8 +32,8 @@ To use the script, the following must be present on the root of the USB device:
 - Follow the prompts to specify the location of the external storage device and the collections folder.
 - The script will automatically capture a memory image with Magnet RAM Capture, capture a triage image with KAPE, check for encrypted disks, and recover the active BitLocker Recovery key, all directly to the USB device.
 
-Note
+# Note: 
 It is important to run this script under the context of an Administrator to have the necessary permissions to execute the commands.
 
-Credits
+# Credits:
 This script was inspired by the work of dwmetz and other developers. We would like to give credit to them for igniting the idea for this script.
