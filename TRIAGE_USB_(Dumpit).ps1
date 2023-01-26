@@ -9,7 +9,7 @@ Set-Location E:\Collections
 mkdir $env:computername -Force
 Set-Location E:\Collections
 
-## capture memory image
+## Capture Memory
 $dumpit = "E:\Collections\Memory\DumpIt.exe"
 $output = "E:\Collections\Memory\memdump"
 
@@ -22,7 +22,7 @@ if ($?) {
     Write-Host "DumpIt execution failed."
 }
 
-## document the OS build information
+## Document the OS build information
 Write-Host -Fore Cyan "Determining OS build info..."
 [System.Environment]::OSVersion.Version > windows_build.txt
 Write-Host -Fore Cyan "Cleaning up"
@@ -34,7 +34,7 @@ Get-ChildItem -Filter '*.raw' -Recurse | Rename-Item -NewName {$_.name -replace 
 Get-ChildItem -Filter '*.raw' -Recurse | Rename-Item -NewName {$_.name -replace ' ', '_' }
 Move-Item -Path E:\*.raw -Destination E:\Collections\$env:COMPUTERNAME\
 
-## execute the KAPE "OS" collection
+## execute the KAPE collection
 Set-Location E:\Collections\KAPE
 Write-Host -Fore Cyan "Collecting OS artifacts..."
 Start-Sleep -Seconds 3
@@ -47,6 +47,6 @@ Write-Host -fore cyan "Retrieving BitLocker Keys"
 Get-ChildItem -Filter 'bitlocker*' -Recurse | Rename-Item -NewName {$_.name -replace 'bitlocker', $env:computername }
 Move-Item -Path E\*.txt -Destination E:\Collections\$env:COMPUTERNAME\Decrypt\LiveResponse
 
-## indicates completion
+## Completion Indication
 Set-Content -Path E:\Collections\$env:COMPUTERNAME\collection-complete.txt -Value "Collection complete: $((Get-Date).ToString())"
 Write-Host -Fore Cyan "** Process Complete **"
