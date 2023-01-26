@@ -1,4 +1,4 @@
-# TRIAGE101
+# 🔎TRIAGE101💻🔍
 
 This repository contains a PowerShell script that automates the process of collecting RAM and triaging a suspect machine to an attached external storage (using USB interface). The script captures a memory image with Magnet RAM Capture or DumpIt based upon the script variant employed, captures a triage image with KAPE, checks for encrypted disks, and recovers the active BitLocker Recovery key, all directly to an attached USB device which can then be presented to the concerned legal authority.
 
