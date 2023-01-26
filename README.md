@@ -33,6 +33,3 @@ To use the script, the following must be present on the root of the USB device:
 
 # 📝Note: 
 It is important to run this script under the context of an Administrator to have the necessary permissions to execute the commands.
-
-# 🪪Credits:
-This script was inspired by the work of dwmetz and other developers. We would like to give credit to them for igniting the idea for this script.
